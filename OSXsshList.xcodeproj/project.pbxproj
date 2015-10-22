@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AB101141BD89DDE000D5975 /* SSHConfigParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB101131BD89DDE000D5975 /* SSHConfigParser.m */; };
+		5AB101171BD8C24B000D5975 /* NSMenuItem+Index.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB101161BD8C24B000D5975 /* NSMenuItem+Index.m */; };
+		5AB1011A1BD8CC35000D5975 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5AB101181BD8CC35000D5975 /* LICENSE */; };
+		5AB1011B1BD8CC35000D5975 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AB101191BD8CC35000D5975 /* README */; };
+		5AE1867F1BD8847E00E05500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1867E1BD8847E00E05500 /* AppDelegate.m */; };
+		5AE186821BD8847E00E05500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE186811BD8847E00E05500 /* main.m */; };
+		5AE186841BD8847E00E05500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186831BD8847E00E05500 /* Assets.xcassets */; };
+		5AE186871BD8847E00E05500 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186851BD8847E00E05500 /* MainMenu.xib */; };
+		5AE186971BD88AFF00E05500 /* tower-black-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186911BD88AFF00E05500 /* tower-black-16.png */; };
+		5AE186981BD88AFF00E05500 /* tower-black-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186921BD88AFF00E05500 /* tower-black-32.png */; };
+		5AE186991BD88AFF00E05500 /* tower-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186931BD88AFF00E05500 /* tower-black.png */; };
+		5AE1869A1BD88AFF00E05500 /* tower-white-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186941BD88AFF00E05500 /* tower-white-16.png */; };
+		5AE1869B1BD88AFF00E05500 /* tower-white-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186951BD88AFF00E05500 /* tower-white-32.png */; };
+		5AE1869C1BD88AFF00E05500 /* tower-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE186961BD88AFF00E05500 /* tower-white.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5AB1010E1BD89C22000D5975 /* macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		5AB101121BD89DDE000D5975 /* SSHConfigParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHConfigParser.h; sourceTree = "<group>"; };
+		5AB101131BD89DDE000D5975 /* SSHConfigParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHConfigParser.m; sourceTree = "<group>"; };
+		5AB101151BD8C24B000D5975 /* NSMenuItem+Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMenuItem+Index.h"; sourceTree = "<group>"; };
+		5AB101161BD8C24B000D5975 /* NSMenuItem+Index.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMenuItem+Index.m"; sourceTree = "<group>"; };
+		5AB101181BD8CC35000D5975 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		5AB101191BD8CC35000D5975 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		5AE1867A1BD8847E00E05500 /* OSXsshList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXsshList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE1867D1BD8847E00E05500 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5AE1867E1BD8847E00E05500 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5AE186811BD8847E00E05500 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AE186831BD8847E00E05500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AE186861BD8847E00E05500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5AE186881BD8847E00E05500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE186911BD88AFF00E05500 /* tower-black-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-black-16.png"; sourceTree = "<group>"; };
+		5AE186921BD88AFF00E05500 /* tower-black-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-black-32.png"; sourceTree = "<group>"; };
+		5AE186931BD88AFF00E05500 /* tower-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-black.png"; sourceTree = "<group>"; };
+		5AE186941BD88AFF00E05500 /* tower-white-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-white-16.png"; sourceTree = "<group>"; };
+		5AE186951BD88AFF00E05500 /* tower-white-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-white-32.png"; sourceTree = "<group>"; };
+		5AE186961BD88AFF00E05500 /* tower-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tower-white.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE186771BD8847E00E05500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AE186711BD8847E00E05500 = {
+			isa = PBXGroup;
+			children = (
+				5AE1867C1BD8847E00E05500 /* OSXsshList */,
+				5AE1867B1BD8847E00E05500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE1867B1BD8847E00E05500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE1867A1BD8847E00E05500 /* OSXsshList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE1867C1BD8847E00E05500 /* OSXsshList */ = {
+			isa = PBXGroup;
+			children = (
+				5AE186901BD88AFF00E05500 /* assets */,
+				5AE1867D1BD8847E00E05500 /* AppDelegate.h */,
+				5AE1867E1BD8847E00E05500 /* AppDelegate.m */,
+				5AB1010E1BD89C22000D5975 /* macros.h */,
+				5AB101151BD8C24B000D5975 /* NSMenuItem+Index.h */,
+				5AB101161BD8C24B000D5975 /* NSMenuItem+Index.m */,
+				5AB101121BD89DDE000D5975 /* SSHConfigParser.h */,
+				5AB101131BD89DDE000D5975 /* SSHConfigParser.m */,
+				5AE186831BD8847E00E05500 /* Assets.xcassets */,
+				5AE186851BD8847E00E05500 /* MainMenu.xib */,
+				5AE186881BD8847E00E05500 /* Info.plist */,
+				5AE186801BD8847E00E05500 /* Supporting Files */,
+			);
+			path = OSXsshList;
+			sourceTree = "<group>";
+		};
+		5AE186801BD8847E00E05500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AB101181BD8CC35000D5975 /* LICENSE */,
+				5AB101191BD8CC35000D5975 /* README */,
+				5AE186811BD8847E00E05500 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AE186901BD88AFF00E05500 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				5AE186911BD88AFF00E05500 /* tower-black-16.png */,
+				5AE186921BD88AFF00E05500 /* tower-black-32.png */,
+				5AE186931BD88AFF00E05500 /* tower-black.png */,
+				5AE186941BD88AFF00E05500 /* tower-white-16.png */,
+				5AE186951BD88AFF00E05500 /* tower-white-32.png */,
+				5AE186961BD88AFF00E05500 /* tower-white.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AE186791BD8847E00E05500 /* OSXsshList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE1868B1BD8847E00E05500 /* Build configuration list for PBXNativeTarget "OSXsshList" */;
+			buildPhases = (
+				5AE186761BD8847E00E05500 /* Sources */,
+				5AE186771BD8847E00E05500 /* Frameworks */,
+				5AE186781BD8847E00E05500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXsshList;
+			productName = OSXsshList;
+			productReference = 5AE1867A1BD8847E00E05500 /* OSXsshList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE186721BD8847E00E05500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Daniel Kurashige-Gollub";
+				TargetAttributes = {
+					5AE186791BD8847E00E05500 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5AE186751BD8847E00E05500 /* Build configuration list for PBXProject "OSXsshList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE186711BD8847E00E05500;
+			productRefGroup = 5AE1867B1BD8847E00E05500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE186791BD8847E00E05500 /* OSXsshList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AE186781BD8847E00E05500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB1011B1BD8CC35000D5975 /* README in Resources */,
+				5AE186971BD88AFF00E05500 /* tower-black-16.png in Resources */,
+				5AE1869C1BD88AFF00E05500 /* tower-white.png in Resources */,
+				5AE186841BD8847E00E05500 /* Assets.xcassets in Resources */,
+				5AE1869A1BD88AFF00E05500 /* tower-white-16.png in Resources */,
+				5AE186981BD88AFF00E05500 /* tower-black-32.png in Resources */,
+				5AE186871BD8847E00E05500 /* MainMenu.xib in Resources */,
+				5AB1011A1BD8CC35000D5975 /* LICENSE in Resources */,
+				5AE186991BD88AFF00E05500 /* tower-black.png in Resources */,
+				5AE1869B1BD88AFF00E05500 /* tower-white-32.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE186761BD8847E00E05500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE186821BD8847E00E05500 /* main.m in Sources */,
+				5AB101171BD8C24B000D5975 /* NSMenuItem+Index.m in Sources */,
+				5AB101141BD89DDE000D5975 /* SSHConfigParser.m in Sources */,
+				5AE1867F1BD8847E00E05500 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5AE186851BD8847E00E05500 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE186861BD8847E00E05500 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AE186891BD8847E00E05500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5AE1868A1BD8847E00E05500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5AE1868C1BD8847E00E05500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXsshList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kurashige-gollub.apps.OSXsshList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AE1868D1BD8847E00E05500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXsshList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kurashige-gollub.apps.OSXsshList";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AE186751BD8847E00E05500 /* Build configuration list for PBXProject "OSXsshList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE186891BD8847E00E05500 /* Debug */,
+				5AE1868A1BD8847E00E05500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE1868B1BD8847E00E05500 /* Build configuration list for PBXNativeTarget "OSXsshList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE1868C1BD8847E00E05500 /* Debug */,
+				5AE1868D1BD8847E00E05500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AE186721BD8847E00E05500 /* Project object */;
+}
