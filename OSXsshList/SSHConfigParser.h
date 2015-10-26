@@ -20,8 +20,10 @@
 @property (nonatomic, assign) BOOL isValidEntry;
 @property (nonatomic, strong) NSString *host;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *user;
 @property (nonatomic, strong) NSString *other;
 
 - (NSString *)getAsCommandLineCommand;
+- (NSString *)getMenuTitle;
 
 @end

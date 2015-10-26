@@ -115,6 +115,8 @@
             // we got some option for the entry, parse them
             if (isHostName) {
                 item.host = [tokens objectAtIndex:1];
+            } else if ([[lower substringToIndex:4] isEqualToString:@"user"]) {
+                item.user = [tokens objectAtIndex:1];
             }
         }
     }
@@ -173,6 +175,16 @@
     NSString *cmd = [NSString stringWithFormat:@"osascript -e 'tell application \"Terminal\" to do script \"%@\"'", ssh];
     
     return cmd;
+}
+
+- (NSString *)getMenuTitle
+{
+//    LOG_FUNC;
+    if (self.user && self.user.length > 0) {
+        return [NSString stringWithFormat:@"%@ (%@@%@)", self.name, self.user, self.host];
+    } else {
+        return [NSString stringWithFormat:@"%@ (%@)", self.name, self.host];
+    }
 }
 
 #pragma mark - overwrites

@@ -65,6 +65,10 @@
                         action:@selector(menuEditConfig:)
                  keyEquivalent:@"e"];
 
+    [mainMenu addItemWithTitle:@"Refresh from ~/.ssh/cconfig"
+                        action:@selector(menuRefresh:)
+                 keyEquivalent:@"r"];
+
     [mainMenu addItem:[NSMenuItem separatorItem]];
     
     for (SSHConfigItem *item in listOfSshEntries) {
@@ -72,7 +76,7 @@
             // Just don't display the general settings one.
 //            [mainMenu addItem:[NSMenuItem separatorItem]];
         } else {
-            NSMenuItem *menuItem = [mainMenu addItemWithTitle:item.name
+            NSMenuItem *menuItem = [mainMenu addItemWithTitle:[item getMenuTitle]
                                                        action:@selector(menuClicked:)
                                                 keyEquivalent:@""];
             menuItem.index = @(item.index);
@@ -81,10 +85,9 @@
 
     [mainMenu addItem:[NSMenuItem separatorItem]];
     
-    [mainMenu addItemWithTitle:@"Refresh from ~/.ssh/cconfig"
-                        action:@selector(menuRefresh:)
-                 keyEquivalent:@"r"];
-    
+    [mainMenu addItemWithTitle:@"Quit"
+                        action:@selector(menuQuit:)
+                 keyEquivalent:@"q"];
     return mainMenu;
 }
 
@@ -108,6 +111,19 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _statusItem.menu = [self updateMenuEntries];
     });
+}
+
+- (void)showAlert:(NSString *)title withMessage:(NSString *)message
+{
+    LOG(@"%@  -  %@", title, message);
+    
+    NSAlert *alert = [[NSAlert alloc] init];
+    
+    alert.messageText = title;
+    alert.informativeText = message;
+    
+    [alert addButtonWithTitle:@"Ok"];
+    [alert runModal];
 }
 
 #pragma mark - actions
@@ -159,12 +175,8 @@
                        attributes:nil
                             error:&error];
         if (error) {
-            NSAlert *alert = [NSAlert alertWithMessageText:@"Error"
-                                             defaultButton:@"Ok"
-                                           alternateButton:nil
-                                               otherButton:nil
-                                 informativeTextWithFormat:@"Could not create ~/.ssh/ folder.\nReason: %@", [error description]];
-            [alert runModal];
+            [self showAlert:@"Error"
+                withMessage:[NSString stringWithFormat:@"Could not create ~/.ssh/ folder.\nReason: %@", [error description]]];
             return;
         }
     }
@@ -172,6 +184,12 @@
     NSString *command = [NSString stringWithFormat:@"open -e %@", sshConfigFile];
 
     system([command UTF8String]);
+}
+
+- (void)menuQuit:(id)sender
+{
+    LOG_FUNC;
+    [[NSApplication sharedApplication] terminate:sender];
 }
 
 @end
