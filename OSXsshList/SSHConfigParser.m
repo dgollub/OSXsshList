@@ -125,7 +125,7 @@
         [list addObject:item];
     }
 
-    // TODO(dkg): sort the list by entry title
+    // sort the list by entry title
     [list sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         NSString *nameA = ((SSHConfigItem *)obj1).name;
         NSString *nameB = ((SSHConfigItem *)obj2).name;
